@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuestRoomCatalog", "QuestRoomCatalog\QuestRoomCatalog.csproj", "{58D86D61-85DD-482E-BF78-24F0BE8A9677}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{31967593-22C9-42F0-B9AB-260570A493C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{7ACE1C35-900C-41AF-9DC9-104A283E62B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{58D86D61-85DD-482E-BF78-24F0BE8A9677}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58D86D61-85DD-482E-BF78-24F0BE8A9677}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58D86D61-85DD-482E-BF78-24F0BE8A9677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31967593-22C9-42F0-B9AB-260570A493C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31967593-22C9-42F0-B9AB-260570A493C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31967593-22C9-42F0-B9AB-260570A493C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31967593-22C9-42F0-B9AB-260570A493C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ACE1C35-900C-41AF-9DC9-104A283E62B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ACE1C35-900C-41AF-9DC9-104A283E62B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ACE1C35-900C-41AF-9DC9-104A283E62B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ACE1C35-900C-41AF-9DC9-104A283E62B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-namespace DataLayer.Entities
+namespace DataLayer
 {
     using System;
     using System.Collections.Generic;

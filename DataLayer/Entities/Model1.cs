@@ -1,4 +1,4 @@
-namespace DataLayer.Entities
+namespace DataLayer
 {
     using System;
     using System.Data.Entity;
@@ -12,6 +12,11 @@ namespace DataLayer.Entities
         {
         }
 
+        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
+        public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
+        public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
+        public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
+        public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
         public virtual DbSet<QuestsLogos> QuestsLogos { get; set; }
         public virtual DbSet<QuestsRooms> QuestsRooms { get; set; }
         public virtual DbSet<Rating> Rating { get; set; }
@@ -20,6 +25,21 @@ namespace DataLayer.Entities
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<AspNetRoles>()
+                .HasMany(e => e.AspNetUsers)
+                .WithMany(e => e.AspNetRoles)
+                .Map(m => m.ToTable("AspNetUserRoles").MapLeftKey("RoleId").MapRightKey("UserId"));
+
+            modelBuilder.Entity<AspNetUsers>()
+                .HasMany(e => e.AspNetUserClaims)
+                .WithRequired(e => e.AspNetUsers)
+                .HasForeignKey(e => e.UserId);
+
+            modelBuilder.Entity<AspNetUsers>()
+                .HasMany(e => e.AspNetUserLogins)
+                .WithRequired(e => e.AspNetUsers)
+                .HasForeignKey(e => e.UserId);
+
             modelBuilder.Entity<QuestsLogos>()
                 .Property(e => e.Image)
                 .IsFixedLength();
