@@ -1,0 +1,4 @@
+C:\Users\БарановскийА\Source\Repos\QuestRoomCatalog00\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\БарановскийА\Source\Repos\QuestRoomCatalog00\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\БарановскийА\Source\Repos\QuestRoomCatalog00\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\БарановскийА\Source\Repos\QuestRoomCatalog00\BusinessLayer\obj\Debug\BusinessLayer.pdb
